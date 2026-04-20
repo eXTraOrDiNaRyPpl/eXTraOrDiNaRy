@@ -113,22 +113,34 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-    background: linear-gradient(135deg, rgba(90, 138, 122, 0.05) 0%, rgba(91, 155, 213, 0.05) 100%);
-    padding: var(--spacing-xl) 0;
+    background-image: url('images/hero-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fafafa;
+    padding: var(--spacing-md) 0;
     text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    padding-top: var(--spacing-md);
+}
+
+.hero-text {
+    text-align: center;
+    padding: 0 var(--spacing-md);
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     color: var(--color-text);
 }
 
@@ -137,10 +149,13 @@ body {
 }
 
 .hero-subtitle {
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.2vw, 1.4rem);
     color: var(--color-secondary);
-    margin-bottom: var(--spacing-md);
     font-weight: 500;
+}
+
+.learn-more-btn {
+    margin-top: var(--spacing-md);
 }
 
 /* ===== Buttons ===== */
@@ -447,7 +462,16 @@ body {
     }
 
     .hero {
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-md) 0;
+        min-height: 300px;
+    }
+
+    .hero-title {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .hero-subtitle {
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
     }
 
     .about-text p {
@@ -465,12 +489,18 @@ body {
         height: 40px;
     }
 
+    .hero {
+        min-height: 250px;
+        padding: var(--spacing-sm) 0;
+        background-size: cover;
+    }
+
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
     }
 
     .card {
