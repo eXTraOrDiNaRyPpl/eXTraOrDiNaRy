@@ -48,6 +48,16 @@ body {
     font-size: 16px;
 }
 
+#home {
+    scroll-margin-top: 90px; /* Adjust this value based on your header's actual height */
+}
+
+#services,
+#about,
+#contact {
+    scroll-margin-top: 10px; /* Adjust this value based on your header's actual height */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -154,8 +164,14 @@ body {
     font-weight: 500;
 }
 
+.learn-more-button{
+    display: flex;
+    justify-content: center;
+}
+
 .learn-more-btn {
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+    margin-bottom:  var(--spacing-sm);
 }
 
 /* ===== Buttons ===== */
